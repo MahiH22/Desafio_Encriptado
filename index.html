@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&family=Inter:wght@300&family=Open+Sans:wght@800&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="Primero">
+            <h1><img src="img/VectorAluraLogo.png" alt="Alura" class="logo"></h1>
+            <form class="formulario">
+                <h1><label for="ingreso">Ingrese el Texto</label></h1>
+                <textarea name="ingreso" id="ingreso" placeholder="Ingrese Texto Aqui" required ></textarea>
+                <fieldset class="advertencia">
+                     <p>Solo letras y minusculas y sin acentos</p>
+                    <img src="/img/Vectorimportante.png" alt="" class="advertencia2">
+                </fieldset>
+                <fieldset class="botones">
+                    <button class="boton-oscuro" id="encriptar"><h4>Encriptar</h4></button>
+                    <button class="boton-claro" id="desencriptar"><h4>Desencriptar</h4></button>
+                </fieldset>
+                </form>
+        </section>
+        <section class="segundo">
+            <form class="formulario2">
+                <fieldset class="segundo-off" id="block-text">
+                    <textarea name="salida" id="salida" cols="50" rows="40" class="texto" placeholder="Salida aqui" readonly></textarea>
+                </fieldset>
+                    <section class="centrar-ena" id="centro">
+                    <img src="img/MuñecoNoSeEncontro.png" alt="" class="imagen">
+                    <h2>Ningun mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar.</p>
+                    </section>
+                <button class="boton-claro2-off" id="copiar"><h4>Copiar</h4></button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>desarrollado por Edgar Mahi Hernandez Garcia</p>
+    </footer>
+    <script src="js/focus.js"></script>
+    <script src="js/cambio-dom.js"></script>
+    <script src="js/encriptado.js"></script>
+    <script src="js/botones.js"></script> 
+</body>
+</html>
