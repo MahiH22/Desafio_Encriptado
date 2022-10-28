@@ -30,6 +30,7 @@ desencriptar.addEventListener('click',function(evento){
     if(ingreso.value==''||!comprobarExpresion(ingreso.value)){
         ResetDisenio();
     }
+    CambioMensaje(ingreso.value);
     aux=desencriptando(ingreso.value)
     aux.toString.toString;
     salida.value= aux
