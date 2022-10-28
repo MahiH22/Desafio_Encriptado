@@ -17,7 +17,7 @@ encriptar.addEventListener('click',function(evento){
     }
     CambioMensaje(ingreso.value);
     aux = encriptado(ingreso.value);
-    aux.toString.toLowerCase;
+    aux=aux.toLowerCase();
     salida.value = aux
     ingreso.value = ''
 })
@@ -32,7 +32,8 @@ desencriptar.addEventListener('click',function(evento){
     }
     CambioMensaje(ingreso.value);
     aux=desencriptando(ingreso.value)
-    aux.toString.toString;
+    aux=aux.toLowerCase()
+    aux.toString.toLowerCase;
     salida.value= aux
     ingreso.value = ''
 })
