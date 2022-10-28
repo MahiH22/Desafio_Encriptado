@@ -12,9 +12,10 @@ encriptar.addEventListener('click',function(evento){
     if(copiar.classList.contains('boton-claro2-off')){
         cambioDisenio()
     }
-    if(ingreso.value==''){
+    if(ingreso.value==''||!comprobarExpresion(ingreso.value)){
         ResetDisenio();
     }
+    CambioMensaje(ingreso.value);
     aux = encriptado(ingreso.value);
     aux.toString.toLowerCase;
     salida.value = aux
@@ -26,7 +27,7 @@ desencriptar.addEventListener('click',function(evento){
     if(copiar.classList.contains('boton-claro2-off')){
         cambioDisenio()
     }
-    if(ingreso.value==''){
+    if(ingreso.value==''||!comprobarExpresion(ingreso.value)){
         ResetDisenio();
     }
     aux=desencriptando(ingreso.value)

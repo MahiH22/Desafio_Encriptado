@@ -24,3 +24,13 @@ function ResetDisenio(){
     bloque.classList.remove('segundo-ena')
     bloque.classList.add('segundo-off')
 }
+function CambioMensaje(ingreso){
+    let aviso = document.querySelector('#aviso')
+    let comprobante=comprobarExpresion(ingreso)
+    if(comprobante){
+        aviso.textContent='Ningun mensaje fue encontrado'
+    }else{
+        aviso.textContent='solo letras y espacios'
+    }
+}
+
